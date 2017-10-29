@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:app="http://schemas.android.com/apk/res-auto">
+	
+	<item
+		android:id="@+id/action_refresh"
+		android:orderInCategory="1"
+		android:title="@string/action_refresh"
+		android:icon="@drawable/ic_action_refresh"
+		app:showAsAction="ifRoom"/>
+	<item
+		android:id="@+id/action_sort"
+		android:icon="@drawable/ic_action_sort"
+		android:orderInCategory="1"
+		android:title="@string/action_sort"
+		app:showAsAction="ifRoom">
+		
+		<menu>
+			<group
+				android:id="@+id/sort_group"
+				android:checkableBehavior="single">
+				
+				<item
+					android:id="@+id/action_sort_by_popularity"
+					android:title="@string/sort_by_popularity"
+					android:checked="true"/>
+				
+				<item
+					android:id="@+id/action_sort_by_rating"
+					android:title="@string/sort_by_rating"/>
+			
+			</group>
+		</menu>
+	
+	</item>
+</menu>
